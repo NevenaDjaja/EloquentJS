@@ -1,4 +1,4 @@
 EloquentJS
 ==========
 
-Review JS concepts
+Review of JS concepts
