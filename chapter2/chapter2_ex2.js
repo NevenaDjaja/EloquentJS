@@ -8,6 +8,13 @@ while (counter<10) {
 
 print(result);
 
+// or with for loop
+var power = 1;
+for (count=0; count<10; count++) {
+	power *= 2;
+}
+print(power);
+
 function print(arg) {
 	console.log(arg);
 }
