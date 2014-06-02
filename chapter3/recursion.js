@@ -6,4 +6,8 @@ function recursive(base, exponent) {
 	return base*recursive(base, exponent-1);
 }
 
+// test
 console.log(recursive(3,5));
+
+// needed for jasmine tests
+exports.recursive = recursive;

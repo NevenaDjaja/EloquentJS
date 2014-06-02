@@ -11,3 +11,6 @@ console.log("Testing...");
 console.log(absolute(-2));
 console.log(absolute(3));
 console.log(absolute(0));
+
+// needed for Jasmine tests
+exports.absolute = absolute;
