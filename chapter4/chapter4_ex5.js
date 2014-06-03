@@ -7,3 +7,6 @@ function catNames(par) {
 // test
 var par = "born 05/04/2006 (mother Lady Penelope): Red Lion, Doctor Hobbles the 3rd, Little Iroquois";
 console.log(catNames(par));
+
+// needed for jasmine
+exports.catNames = catNames;

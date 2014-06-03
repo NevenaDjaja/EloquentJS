@@ -9,3 +9,6 @@ function range(length) {
 // test
 console.log(range(10));
 console.log(range(5));
+
+// needed for jasmine tests
+exports.range = range;

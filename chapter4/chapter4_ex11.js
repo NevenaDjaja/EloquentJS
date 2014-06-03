@@ -8,3 +8,6 @@ function sum(array) {
 
 // test
 console.log(sum([1,2,3]));
+
+// needed for jasmine tests
+exports.sum = sum;

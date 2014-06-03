@@ -6,3 +6,6 @@ function between(text, start, end) {
 
 // test
 console.log(between("born (this) way", "(", ")"));
+
+// needed for jasmine
+exports.between = between;

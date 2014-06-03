@@ -37,3 +37,6 @@ function range2(length, end) {
 // test 
 console.log(range2(7));
 console.log(range2(3,7));
+
+// for jasmine tests
+exports.range = range;

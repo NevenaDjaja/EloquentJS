@@ -6,3 +6,6 @@ function startsWith(text, start) {
 // test
 console.log(startsWith("blahblah2 blah3", "blah"));  //true
 console.log(startsWith("ja sam mala", "garava"));	// false
+
+// needed for Jasmine tests
+exports.startsWith = startsWith;

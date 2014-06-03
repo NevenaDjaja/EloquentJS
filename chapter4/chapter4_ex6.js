@@ -22,3 +22,6 @@ function extractDate2(paragraph) {
 
 // test
 console.log(extractDate2("died 23/06/2003: Tommy"));
+
+// needed for jasmine
+exports.extractDate = extractDate;

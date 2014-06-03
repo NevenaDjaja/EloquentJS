@@ -11,3 +11,6 @@ function formatDate(date) {
 }
 
 console.log(formatDate(new Date(1983, 3,13)));
+
+// needed for jasmine tests
+exports.formatDate = formatDate;

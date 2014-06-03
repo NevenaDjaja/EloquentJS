@@ -7,7 +7,7 @@ function addCats(set, names, birthdate, mother) {
 		set[names[i]] = catRecord(names[i], birthdate, mother);
 }
 
-function deadCat(set, names, deathdate) {
+function deadCats(set, names, deathdate) {
 	for (var i=0; i < names.length; i++)
 		set[names[i]].death = deathdate;
 }
@@ -20,3 +20,9 @@ function extractMother(paragraph) {
 
 // test extractMother
 console.log(extractMother("born 15/11/2003 (mother Spot): White Fang"));
+
+// for jasmine tests
+exports.catRecord = catRecord;
+exports.addCats = addCats;
+exports.deadCats = deadCats;
+exports.extractMother = extractMother;
