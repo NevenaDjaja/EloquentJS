@@ -5,6 +5,7 @@ var closure = require("./closure");
 var scoping_closure = require("./scoping-closure");
 var recursion = require("./recursion");
 
+// tests
 describe("ex1#absolute", function() {
 	it ("should return a positive value of a negative number", function() {
 		var value = ex1.absolute(-4);

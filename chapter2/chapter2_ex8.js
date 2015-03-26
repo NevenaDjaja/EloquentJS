@@ -1,4 +1,4 @@
-var answer = parseInt(prompt("What is 2+2?"));
+var answer = parseInt(prompt("What is 2+2?"),10);
 
 while (true) {
 	if (answer === 4) {
@@ -11,7 +11,7 @@ while (true) {
 
 var value = null;
 while (value != 4) {
-	value = parseInt(prompt("What is 2+2?"));
+	value = parseInt(prompt("What is 2+2?"),10);
 	if (answer === 4) {
 		alert("you are a genious");
 	} else {

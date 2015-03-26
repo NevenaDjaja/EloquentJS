@@ -1,11 +1,11 @@
 for (var count=0; count<30; count++) {
-	if (count%3==0 && count%2==0) {
+	if (count%3===0 && count%2===0) {
 		console.log(count);
 	}
 }
 
 for (var count=0; count<20; count++) {
-	if (count%4 == 0) {
+	if (count%4 === 0) {
 		console.log(count);
 	} else {
 		console.log("("+count+")");
