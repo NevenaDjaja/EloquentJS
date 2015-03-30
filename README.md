@@ -1,7 +1,7 @@
 EloquentJS
 ==========
 
-Review of JS concepts with
+Examples from the book
 [Eloquent JS](http://eloquentjavascript.net/)
 Added Jasmine tests for testing examples from the book.
 
@@ -10,3 +10,4 @@ $ npm install jasmine-node -g
 
 and run:
 $ jasmine-node  . --autotest --color
+
