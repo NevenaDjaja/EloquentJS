@@ -8,6 +8,7 @@ var ex8 = require("./chapter4_ex8");
 var ex10 = require("./chapter4_ex10");
 var ex11 = require("./chapter4_ex11");
 var cats_algo = require("./new_cats_algo");
+var range_sum = require("./range_sum");
 
 beforeEach(function() {
 	var set = {"john":true, "mark":false};
@@ -115,6 +116,40 @@ describe("cats_algo#deadCats", function() {
 		});
 	});
 	
+});
+
+describe("range_sum#range", function() {
+	it ("should return [3,4,5,6,7]", function(){
+		var result = range_sum.range(3,7);
+		expect(result).toEqual([3,4,5,6,7]);
+	});
+
+	it ("should return [3,2,1,0,-1]", function(){
+		var result = range_sum.range(3,-1);
+		expect(result).toEqual([3,2,1,0,-1]);
+	});
+
+	it ("should return the [5]", function(){
+		var result = range_sum.range(5,5);
+		expect(result).toEqual([5]);
+	});
+});
+
+describe("range_sum#sum", function() {
+	it ("should return 55", function(){
+		var result = range_sum.sum([1,2,3,4,5,6,7,8,9,10]);
+		expect(result).toBe(55);
+	});
+
+	it ("should return [3,2,1,0,-1]", function(){
+		var result = range_sum.sum([3,2,1,0,-1]);
+		expect(result).toBe(5);
+	});
+
+	it ("should return 'empty array'", function(){
+		var result = range_sum.sum([]);
+		expect(result).toEqual("empty array");
+	});
 });
 
 
