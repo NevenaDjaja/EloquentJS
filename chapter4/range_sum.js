@@ -28,5 +28,6 @@ console.log(sum(range(1,10)));
 console.log(range(5,2,-1));
 console.log(sum(range(5,2,-1)));
 
+// for jasmine tests
 exports.range = range;
 exports.sum = sum;

@@ -9,6 +9,7 @@ var ex10 = require("./chapter4_ex10");
 var ex11 = require("./chapter4_ex11");
 var cats_algo = require("./new_cats_algo");
 var range_sum = require("./range_sum");
+var reverse_array = require("./reverse_array");
 
 beforeEach(function() {
 	var set = {"john":true, "mark":false};
@@ -149,6 +150,23 @@ describe("range_sum#sum", function() {
 	it ("should return 'empty array'", function(){
 		var result = range_sum.sum([]);
 		expect(result).toEqual("empty array");
+	});
+});
+
+describe("reverse_array#reverse_array", function() {
+	it ("should return ['C','B','A'])", function() {
+		var result = reverse_array.reverse_array(['A','B','C']);
+		expect(result).toEqual(['C','B','A']);
+	});
+
+	it ("should return -1", function() {
+		expect(reverse_array.reverse_array([])).toBe(-1);
+	});
+
+	it ("should modify the original array", function() {
+		var input = [4,3,2,1];
+		reverse_array.reverse_array_in_place(input);
+		expect(input).toEqual([1,2,3,4]);
 	});
 });
 
